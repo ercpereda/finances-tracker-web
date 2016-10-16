@@ -5,6 +5,9 @@ import './App.css';
 import Accounts from './Accounts';
 import Categories from './Categories';
 import CategoryForm from './CategoryForm';
+import AccountForm from './AccountForm';
+
+import accountTypes from '../models/account-types';
 
 class App extends Component {
   render() {
@@ -17,7 +20,7 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
-        <CategoryForm />
+        <AccountForm types={Object.keys(accountTypes).map(key => accountTypes[key])} />
       </div>
     );
   }

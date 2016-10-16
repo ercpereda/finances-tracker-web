@@ -1,4 +1,4 @@
-const accountType = {
+const accountTypes = {
   'ch': {
     code: 'cash',
     name: 'Cash',
@@ -41,4 +41,4 @@ const accountType = {
   }
 };
 
-export default accountType;
+export default accountTypes;

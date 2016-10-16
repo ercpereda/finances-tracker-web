@@ -14,6 +14,8 @@ class Accounts extends Component {
               <h4>{account.currency}</h4>
               <h4>{account.note}</h4>
               <h4>{account.amount}</h4>
+              <h4>{account.creationDate.toString()}</h4>
+              <h4>{account.modificationDate.toString()}</h4>
             </li>
           )}
         </ul>

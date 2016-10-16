@@ -3,6 +3,7 @@ import logo from '../logo.svg';
 import './App.css';
 
 import Accounts from './Accounts';
+import Categories from './Categories';
 
 class App extends Component {
   render() {
@@ -15,7 +16,7 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
-        <Accounts />
+        <Categories />
       </div>
     );
   }

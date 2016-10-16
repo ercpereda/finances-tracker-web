@@ -6,8 +6,9 @@ class Accounts extends Component {
     return (
       <div>
         <ul>
-          {accounts.map((account, i) => 
-            <li key={i}>
+          {accounts.map(account=> 
+            <li key={account.id}>
+              <h4>{account.id}</h4>
               <h4>{account.type}</h4>
               <h4>{account.issuer}</h4>
               <h4>{account.title}</h4>

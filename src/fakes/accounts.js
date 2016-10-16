@@ -7,6 +7,7 @@ const creationDate = faker.date.past(1, modificationDate);
 
 const accounts = [
   {
+    id: faker.random.uuid(),
     type: faker.random.objectElement(accountType, 'key'),
     issuer: faker.name.firstName,
     title: faker.finance.accountName(),

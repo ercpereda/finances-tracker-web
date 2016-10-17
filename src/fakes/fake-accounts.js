@@ -5,7 +5,7 @@ import accountTypes from '../models/account-types';
 const modificationDate = faker.date.recent(20);
 const creationDate = faker.date.past(1, modificationDate);
 
-const accounts = [
+export default [
   {
     id: faker.random.uuid(),
     type: faker.random.objectElement(accountTypes, 'key'),
@@ -18,5 +18,3 @@ const accounts = [
     modificationDate
   }
 ];
-
-export default accounts;

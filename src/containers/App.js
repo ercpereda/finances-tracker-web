@@ -1,17 +1,21 @@
 import React from 'react';
 import Router from 'react-router/BrowserRouter';
 
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+
 import Header from '../components/Header';
 import MainSection from '../components/MainSection';
 
 const App = () => (
   <Router>
-    <div>
-      <Header />
-      <hr />
-      <hr />
-      <MainSection />
-    </div>
+    <MuiThemeProvider>
+      <div>
+        <Header />
+        <hr />
+        <hr />
+        <MainSection />
+      </div>
+    </MuiThemeProvider>
   </Router>
 );
 

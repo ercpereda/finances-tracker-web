@@ -3,20 +3,19 @@ import { guid } from '../helpers';
 
 import fakeAccounts from '../fakes/fake-accounts';
 
-const initialState = {
-  accounts: fakeAccounts 
-};
+const initialState = fakeAccounts; 
 
-export default function accounts(state=initialState, action)  {
+export default function accounts(state= initialState, action)  {
+  console.log(state);
   switch (action.type) {
   case ADD_ACCOUNT:
-    return { accounts: [
-      ...state.accounts, 
+    return  [
+      ...state, 
       {
         id: guid(),
         ...action.account
       }
-    ]};
+    ];
   default:
     return state;
   }

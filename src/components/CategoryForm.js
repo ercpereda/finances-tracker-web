@@ -7,11 +7,13 @@ class CategoryForm extends Component {
       title: '',
       description: ''
     };
+
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   handleSubmit(e) {
     e.preventDefault();
-    console.log('Category submited');
+    this.props.onSubmit();
   }
 
   render() {

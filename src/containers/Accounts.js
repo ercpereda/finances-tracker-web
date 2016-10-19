@@ -15,7 +15,8 @@ const Accounts = ({accounts, actions}) => (
       type: 'ch',
       creationDate: new Date(),
       modificationDate: new Date()
-    })}/>
+      })}
+    />
     <hr />
     <ul>
       {accounts.map(account=> 
@@ -40,9 +41,10 @@ Accounts.propTypes = {
   actions: PropTypes.object.isRequired
 };
 
-const mapStateToProps = state => ({
-  accounts: state.accounts
-});
+const mapStateToProps = state => {
+  console.log(state);
+  return {accounts: state.accounts};
+};
 
 const mapDispatchToProps = dispatch => ({
   actions: bindActionCreators(AccountActions, dispatch)

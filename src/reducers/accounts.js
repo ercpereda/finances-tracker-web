@@ -6,7 +6,6 @@ import fakeAccounts from '../fakes/fake-accounts';
 const initialState = fakeAccounts; 
 
 export default function accounts(state= initialState, action)  {
-  console.log(state);
   switch (action.type) {
   case ADD_ACCOUNT:
     return  [

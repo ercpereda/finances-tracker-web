@@ -42,7 +42,6 @@ Accounts.propTypes = {
 };
 
 const mapStateToProps = state => {
-  console.log(state);
   return {accounts: state.accounts};
 };
 

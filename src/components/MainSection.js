@@ -1,13 +1,10 @@
-import React, { Component } from 'react';
-import Accounts from '../containers/Accounts';
-import Categories from '../containers/Categories';
+import React from 'react';
+
+import Routes from '../routes';
 
 const MainSection = () => (
   <section>
-    <Accounts />
-    <hr />
-    <hr />
-    <Categories />
+    <Routes />
   </section>
 );
 

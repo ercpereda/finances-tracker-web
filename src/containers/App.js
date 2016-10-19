@@ -3,7 +3,7 @@ import Router from 'react-router/BrowserRouter';
 
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
-import Header from '../components/Header';
+import Header from '../containers/Header';
 import MainSection from '../components/MainSection';
 
 const App = () => (

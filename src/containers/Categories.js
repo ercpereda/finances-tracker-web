@@ -2,7 +2,21 @@ import React, { PropTypes } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import * as CategoryActions from '../actions/category-actions';
+
+import FloatingActionButton from 'material-ui/FloatingActionButton';
+import ContentAdd from 'material-ui/svg-icons/content/add';
+
+import CategoryList from '../components/CategoryList';
 import CategoryForm from '../components/CategoryForm';
+
+const fabStyle = {
+  margin: 0,
+  top: 'auto',
+  right: 20,
+  bottom: 20,
+  left: 'auto',
+  position: 'fixed'
+};
 
 const Categories = ({categories, actions}) => (
   <div>
@@ -12,14 +26,13 @@ const Categories = ({categories, actions}) => (
       })} 
     />
     <hr />
-    <ul>
-      {categories.map(category => 
-      <li key={category.id}>
-        <h4>{category.title}</h4>
-        <h4>{category.description}</h4>
-      </li>
-      )}
-    </ul>
+    <CategoryList categories={categories} />
+    <FloatingActionButton 
+      style={fabStyle}
+      onTouchTap={() => console.log('hello')}
+    >
+      <ContentAdd />
+    </FloatingActionButton>
   </div>
 );
 

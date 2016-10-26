@@ -11,8 +11,6 @@ const App = () => (
     <MuiThemeProvider>
       <div>
         <Header />
-        <hr />
-        <hr />
         <MainSection />
       </div>
     </MuiThemeProvider>

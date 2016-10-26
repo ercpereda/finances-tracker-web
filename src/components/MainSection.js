@@ -1,11 +1,10 @@
 import React from 'react';
 
-//import Routes from '../routes';
-import CategoryListContainer from '../containers/CategoryListContainer';
+import Routes from '../routes';
 
 const MainSection = () => (
   <section>
-    <CategoryListContainer />
+    {Routes}
   </section>
 );
 
